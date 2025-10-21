@@ -16,7 +16,11 @@
         .container {
             position: absolute;
             left: 50%;
-            top: 30%;
+            
+            /* --- 1. PRIMER CAMBIO AQUÍ --- */
+            /* Cambié 'top' de 30% a 50% para centrar verticalmente la flor */
+            top: 50%; 
+            
             transform: translate(-50%, -50%);
         }
 
@@ -348,12 +352,18 @@
             }
         }
 
+        /* --- 2. SEGUNDO CAMBIO AQUÍ --- */
         .texto {
-            top: 50%;
+            /* Cambié 'top' a 85% para ponerlo debajo de la flor */
+            top: 85%;
             color: white;
             font-size: 35px;
             position: absolute;
-            left: 10%;
+            /* Cambié 'left' a 50% y añadí 'transform' para centrar el texto */
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            width: 100%; /* Asegura que el centrado funcione bien */
         }
     </style>
 </head>
@@ -392,7 +402,7 @@
         </div>
     </div>
     <div>
-        <h4 class="texto">Mi amor por ti durará hasta que caiga el último pétalo ❤️</h>
+        <h4 class="texto">Mi amor por ti durará hasta que caiga el último pétalo ❤️</h4>
     </div>
 </body>
 
